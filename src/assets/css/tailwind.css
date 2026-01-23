@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@config "../../../tailwind.config.js";
+
+/* Tailwind v4 content sources (keep it explicit for predictable builds) */
+@source "../../**/*.{njk,html,md,js}";
+
+@theme {
+  --font-display: 'Prompt', Arial, sans-serif;
+  --color-brand: #eaf2eb;
+}
+
+/* Small defaults */
+:root {
+  color-scheme: light;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+}
