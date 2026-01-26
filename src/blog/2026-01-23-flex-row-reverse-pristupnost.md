@@ -1,6 +1,6 @@
 ---
-title: "flex-direction a prístupnosť vo flexboxe"
-excerpt: "Ako môže flex-direction:row-reverse pomôcť udržať logické poradie v DOM (tab order) a pritom otočiť vizuálne rozloženie — a na čo si dať pozor."
+title: 'flex-direction a prístupnosť vo flexboxe'
+excerpt: 'Ako môže flex-direction:row-reverse pomôcť udržať logické poradie v DOM (tab order) a pritom otočiť vizuálne rozloženie — a na čo si dať pozor.'
 tags: posts
 layout: layouts/post.njk
 date: 2026-01-23
@@ -62,4 +62,3 @@ Flexbox je dnes podporovaný veľmi široko, ale ak cieliš aj na staršie prost
 
 - základný layout bez `row-reverse` (napr. `flex-direction: column;`)
 - a `row-reverse` až pod `@media` pre väčšie šírky
-

@@ -1,35 +1,35 @@
 {
-    "name": "rosenberger-github-io",
-    "private": true,
-    "type": "commonjs",
-    "scripts": {
-        "precss:build": "node -e \"require('fs').mkdirSync('_site/assets/css',{recursive:true})\"",
-        "precss:watch": "node -e \"require('fs').mkdirSync('_site/assets/css',{recursive:true})\"",
-        "prejs:build": "node -e \"require('fs').mkdirSync('_site/assets/js',{recursive:true})\"",
-        "prejs:watch": "node -e \"require('fs').mkdirSync('_site/assets/js',{recursive:true})\"",
-        "11ty:build": "npx @11ty/eleventy",
-        "11ty:serve": "npx @11ty/eleventy --serve",
-        "css:build": "npx @tailwindcss/cli -i ./src/assets/css/tailwind.css -o ./_site/assets/css/style.css",
-        "css:watch": "npx @tailwindcss/cli -i ./src/assets/css/tailwind.css -o ./_site/assets/css/style.css --watch",
-        "js:build": "npx esbuild src/assets/js/main.js --bundle --minify --sourcemap --outfile=_site/assets/js/bundle.js",
-        "js:watch": "npx esbuild src/assets/js/main.js --bundle --sourcemap --outfile=_site/assets/js/bundle.js --watch",
-        "build": "npm run css:build && npm run js:build && npm run 11ty:build",
-        "dev": "npx concurrently -n CSS,JS,11TY -c green,magenta,cyan \"npm run css:watch\" \"npm run js:watch\" \"npm run 11ty:serve\"",
-        "format": "npx prettier --write .",
-        "format:check": "npx prettier --check ."
-    },
-    "devDependencies": {
-        "@11ty/eleventy": "^3.1.2",
-        "@tailwindcss/cli": "^4.1.18",
-        "@tailwindcss/postcss": "^4.1.18",
-        "autoprefixer": "^10.4.19",
-        "concurrently": "^9.1.2",
-        "esbuild": "^0.25.0",
-        "prettier": "^3.8.1",
-        "postcss": "^8.4.38",
-        "tailwindcss": "^4.1.18"
-    },
-    "dependencies": {
-        "@hotwired/stimulus": "^3.2.2"
-    }
+  "name": "rosenberger-github-io",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "precss:build": "node -e \"require('fs').mkdirSync('_site/assets/css',{recursive:true})\"",
+    "precss:watch": "node -e \"require('fs').mkdirSync('_site/assets/css',{recursive:true})\"",
+    "prejs:build": "node -e \"require('fs').mkdirSync('_site/assets/js',{recursive:true})\"",
+    "prejs:watch": "node -e \"require('fs').mkdirSync('_site/assets/js',{recursive:true})\"",
+    "11ty:build": "npx @11ty/eleventy",
+    "11ty:serve": "npx @11ty/eleventy --serve",
+    "css:build": "npx @tailwindcss/cli -i ./src/assets/css/tailwind.css -o ./_site/assets/css/style.css",
+    "css:watch": "npx @tailwindcss/cli -i ./src/assets/css/tailwind.css -o ./_site/assets/css/style.css --watch",
+    "js:build": "npx esbuild src/assets/js/main.js --bundle --minify --sourcemap --outfile=_site/assets/js/bundle.js",
+    "js:watch": "npx esbuild src/assets/js/main.js --bundle --sourcemap --outfile=_site/assets/js/bundle.js --watch",
+    "build": "npm run css:build && npm run js:build && npm run 11ty:build",
+    "dev": "npx concurrently -n CSS,JS,11TY -c green,magenta,cyan \"npm run css:watch\" \"npm run js:watch\" \"npm run 11ty:serve\"",
+    "format": "npx prettier --write .",
+    "format:check": "npx prettier --check ."
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@tailwindcss/cli": "^4.1.18",
+    "@tailwindcss/postcss": "^4.1.18",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^9.1.2",
+    "esbuild": "^0.25.0",
+    "prettier": "^3.8.1",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2"
+  }
 }

@@ -27,4 +27,11 @@ npm run build
 - `src/` – zdrojové templaty a obsah
 - `src/_includes/` – includes a layouty
 - `src/assets/` – Tailwind input + JS entrypoint + Stimulus controllery
+- `src/public/` – statické súbory kopírované **do rootu webu** (napr. verifikačný súbor pre Google)
+- `src/static/` – statické súbory kopírované pod **`/static/`** (napr. ikonky)
 - `_site/` – výsledný statický web (build output)
+
+## Statické súbory
+
+- `src/public` → `/`
+- `src/static` → `/static`

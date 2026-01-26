@@ -1,5 +1,9 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ 'src/static': '/' });
+  // Static files:
+  // - `src/public` is copied to the site root (e.g. Google Search Console HTML verification)
+  // - `src/static` is copied under `/static/` (icons, misc files)
+  eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
+  eleventyConfig.addPassthroughCopy({ 'src/static': '/static' });
 
   eleventyConfig.addGlobalData('buildTime', () => new Date());
 

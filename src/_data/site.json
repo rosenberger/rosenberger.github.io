@@ -1,10 +1,10 @@
 {
-    "title": "Rosenberger",
-    "description": "My personal website",
-    "nav": [
-        {
-            "label": "Blog",
-            "url": "/blog/"
-        }
-    ]
+  "title": "Rosenberger",
+  "description": "My personal website",
+  "nav": [
+    {
+      "label": "Blog",
+      "url": "/blog/"
+    }
+  ]
 }

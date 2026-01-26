@@ -1,8 +1,14 @@
-<header class="fixed top-0 inset-x-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-white/20 dark:bg-slate-600/80" data-controller="header">
+<header
+  class="fixed top-0 inset-x-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-white/20 dark:bg-slate-600/80"
+  data-controller="header"
+>
   <div class="mx-auto max-w-5xl px-4">
     <div class="flex h-16 items-center justify-between">
       <h1>
-        <a href="/" class="font-semibold tracking-tight text-slate-900 hover:text-slate-700 dark:text-white dark:hover:text-white/80">
+        <a
+          href="/"
+          class="font-semibold tracking-tight text-slate-900 hover:text-slate-700 dark:text-white dark:hover:text-white/80"
+        >
           {{ site.title }}
         </a>
       </h1>
@@ -20,7 +26,7 @@
         <div class="ml-2 flex items-center">
           <button
             type="button"
-            class="rounded-xs px-2.5 py-2 text-slate-700  hover:text-slate-900  data-[active=true]:text-gray-400"
+            class="rounded-xs px-2.5 py-2 text-slate-700 hover:text-slate-900 data-[active=true]:text-gray-400"
             data-action="header#toggleContrast"
             data-theme="light"
             data-header-target="contrastButton"
@@ -28,12 +34,28 @@
             title="Svetlý režim"
           >
             <span class="sr-only">Svetlý režim</span>
-            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            <svg
+              class="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+              />
+            </svg>
           </button>
-          <span class="text-slate-500 dark:text-white/60">/</span> 
+          <span class="text-slate-500 dark:text-white/60">/</span>
           <button
             type="button"
-            class="rounded-xs px-2.5 py-2 text-slate-700 hover:text-slate-900  data-[active=true]:text-gray-400"
+            class="rounded-xs px-2.5 py-2 text-slate-700 hover:text-slate-900 data-[active=true]:text-gray-400"
             data-action="header#toggleContrast"
             data-theme="dark"
             data-header-target="contrastButton"
@@ -41,7 +63,22 @@
             title="Tmavý režim"
           >
             <span class="sr-only">Tmavý režim</span>
-            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><g transform="translate(12 12) scale(0.85) translate(-12 -12)"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9"/></g></svg>
+            <svg
+              class="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <g transform="translate(12 12) scale(0.85) translate(-12 -12)">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9" />
+              </g>
+            </svg>
           </button>
         </div>
       </nav>
