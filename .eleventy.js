@@ -15,6 +15,15 @@ module.exports = function (eleventyConfig) {
     return items.sort((a, b) => a.date - b.date);
   });
 
+  // Sitemap collection: only HTML pages, excluding anything opted-out via eleventyExcludeFromCollections
+  eleventyConfig.addCollection('sitemap', (collectionApi) => {
+    return collectionApi
+      .getAllSorted()
+      .filter((item) => !item.data?.eleventyExcludeFromCollections)
+      .filter((item) => typeof item.url === 'string' && typeof item.outputPath === 'string')
+      .filter((item) => item.outputPath.endsWith('.html'));
+  });
+
   eleventyConfig.addFilter('dateISO', (value) => {
     const d = value instanceof Date ? value : new Date(value);
     return d.toISOString().slice(0, 10);
