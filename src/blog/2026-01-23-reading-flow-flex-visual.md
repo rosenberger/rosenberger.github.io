@@ -77,4 +77,3 @@ Príklad:
 ```
 
 Ak chceš mať kompatibilitu úplne striktne (aj na starších prehliadačoch), stále platí: **najspoľahlivejšie je mať DOM poradie rovnaké ako vizuálne poradie**.
-

@@ -1,11 +1,11 @@
 {
-    "title": "Rosenberger",
-    "description": "My personal website",
-    "url": "https://rosenberger.github.io",
-    "nav": [
-        {
-            "label": "Blog",
-            "url": "/blog/"
-        }
-    ]
+  "title": "Rosenberger",
+  "description": "My personal website",
+  "url": "https://rosenberger.github.io",
+  "nav": [
+    {
+      "label": "Blog",
+      "url": "/blog/"
+    }
+  ]
 }
