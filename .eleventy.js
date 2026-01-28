@@ -49,6 +49,14 @@ module.exports = function (eleventyConfig) {
     return arr.slice(0, n);
   });
 
+  // Transform to ensure sitemap.xml starts with XML declaration (no leading whitespace)
+  eleventyConfig.addTransform('trimSitemap', function (content, outputPath) {
+    if (outputPath && outputPath.endsWith('/sitemap.xml')) {
+      return content.trimStart();
+    }
+    return content;
+  });
+
   return {
     dir: {
       input: 'src',
