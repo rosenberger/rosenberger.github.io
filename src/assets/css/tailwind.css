@@ -18,3 +18,7 @@
 html[data-theme='dark'] {
   color-scheme: dark;
 }
+a {
+  text-underline-offset: .16em;
+  text-decoration-thickness: 0.06em;
+}
