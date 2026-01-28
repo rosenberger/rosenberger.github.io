@@ -1,8 +1,10 @@
 ---
+layout: null
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
----{%- set xmlDecl = '<?xml version="1.0" encoding="UTF-8"?>' -%}
-{{ xmlDecl | safe }}
+---
+
+{%- set xmlDecl = '<?xml version="1.0" encoding="UTF-8"?>' -%} {{ xmlDecl | safe }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {%- for item in collections.sitemap %}
   <url>
