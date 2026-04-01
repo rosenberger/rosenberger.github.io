@@ -2,10 +2,5 @@
   "title": "Rosenberger",
   "description": "My personal website",
   "url": "https://rosenberger.github.io",
-  "nav": [
-    {
-      "label": "Blog",
-      "url": "/blog/"
-    }
-  ]
+  "nav": []
 }

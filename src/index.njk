@@ -5,7 +5,7 @@ title: Domov
 
 <div class="flex-1"></div>
 
-<section class="mt-10">
+{# <section class="mt-10">
   <div class="flex items-end justify-between gap-4">
     <h2 class="text-xl font-semibold">News</h2>
     <a
@@ -32,7 +32,7 @@ title: Domov
     </li>
     {% endfor %}
   </ul>
-</section>
+</section> #}
 <section class="mt-10">
   <h2 class="text-xl font-semibold">Articles</h2>
   <ul class="mt-3 list-disc pl-5 text-slate-600 dark:text-white/80">
@@ -91,13 +91,7 @@ title: Domov
     >
     living in Brno, Czech Republic.
   </p>
-  <p class="mt-2 text-slate-600 dark:text-white/70">
-    I care about equality in society and stand behind the statement of
-    <a href="https://front-end.social/about" class="underline hover:no-underline" target="_blank"
-      >front-end.social</a
-    >: Front-end web makers who value humans over technology & embrace diversity on an accessible
-    web. We hope to stay small & grow slowly.
-  </p>
+
 </section>
 <section class="mt-10">
   <h2 class="text-xl font-semibold">I support</h2>
@@ -134,16 +128,12 @@ title: Domov
         Iniciativa nájemníků a nájemnic
       </a>
     </li>
-    <li>
-      <a class="underline hover:no-underline" target="_blank" href="https://limityjsmemy.cz/">
-        Limity jsme my
-      </a>
-    </li>
   </ul>
 </section>
 <section class="mt-10">
   <h2 class="text-xl font-semibold">Contacts</h2>
   <p class="mt-2 text-slate-600 dark:text-white/80">
+    <button type="button" class="no-underline hover:underline" data-action="dialog#open" aria-expanded="false" aria-controls="dialog">write to me</button><br>
     <a href="mailto:jozefrosenberger@gmail.com?subject=Kontakt" class="no-underline"
       >jozefrosenberger@gmail.com</a
     >
@@ -153,3 +143,29 @@ title: Domov
     >
   </p>
 </section>
+<dialog data-dialog-target="dialog" class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-slate-900/30 backdrop-blur-sm">
+  <div class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center ">
+    <div class="relative transform overflow-hidden border-2 border-slate-800 bg-white text-left shadow-xl sm:w-full sm:max-w-lg">
+      <form action="https://api.web3forms.com/submit" method="POST" class="p-8 flex flex-col gap-4">
+        <input class="border border-blue-950/50 p-2" type="hidden" name="access_key" value="cd318c29-e9c5-43a9-8b4c-7f5b16e1a2e4">
+        <div>
+          <label for="name" class="text-slate-600 block">Name</label>
+          <input class="border border-blue-950/50 p-2 block w-full" type="text" name="name" required id="name">
+        </div>
+        <div>
+          <label for="email" class="text-slate-600 block">Email</label>
+          <input class="border border-blue-950/50 p-2 block w-full" type="email" name="email" required id="email">
+        </div>
+        <div>
+          <label for="message" class="text-slate-600 block">Message</label>
+          <textarea class="resize-none border border-blue-950/50 p-2 block w-full" name="message" required placeholder="How can I help you?" id="message"></textarea>
+        </div>
+        <button type="submit" class="bg-slate-900 text-white rounded-xs p-2 hover:bg-pink-700 w-full">Send</button>
+      </form>
+      <button type="button" class="absolute top-0 right-0 inline-flex items-center justify-center size-8 text-slate-600 hover:text-slate-900 dark:text-white/80 dark:hover:text-white" data-action="dialog#close" aria-expanded="false" aria-controls="dialog">
+      <span class="sr-only">Close</span>
+      <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+  </div>
+</dialog>
